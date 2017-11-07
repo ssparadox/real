@@ -18,8 +18,9 @@ public class App
     public static void main( String[] args ) {
 
 		Logger logger = Logger.getLogger("App");
+
     	for(String arg : args) {
-			logger.log(Level.INFO, "Something went wrong: " + arg);
+			logger.log(Level.INFO, "parameter: {}", arg);
     	}
     }
 }
